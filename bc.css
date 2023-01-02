@@ -1933,7 +1933,7 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-article, figcaption, figure, header, main, nav, section {
+article, figcaption, figure, main, nav, section {
     display: block;
 }
 
@@ -3441,26 +3441,8 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     margin-bottom: 0;
 }
 
-.card-header {
-    padding: 0.75rem 1.25rem;
-    margin-bottom: 0;
-    background-color: rgba(0, 0, 0, 0.03);
-    border-bottom: 1px solid #e3e3e3;
-}
 
-.card-header:first-child {
-    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
-}
 
-.card-header+.list-group .list-group-item:first-child {
-    border-top: 0;
-}
-
-.card-img-top {
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
 
 .breadcrumb {
     display: -webkit-box;
@@ -3908,7 +3890,7 @@ a.close.disabled {
     overflow: hidden;
 }
 
-.modal-dialog-scrollable .modal-header, .modal-dialog-scrollable .modal-  {
+.modal-dialog-scrollable ,.modal-dialog-scrollable .modal-  {
     flex-shrink: 0;
 }
 
@@ -3972,20 +3954,7 @@ a.close.disabled {
     opacity: 0.5;
 }
 
-.modal-header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 1rem 1rem;
-    border-bottom: 1px solid #c9ccd7;
-    border-top-left-radius: 0.3rem;
-    border-top-right-radius: 0.3rem;
-}
 
-.modal-header .close {
-    padding: 1rem 1rem;
-    margin: -20px -10px -25px auto;
-}
 
 .modal-title {
     margin-bottom: 0;
@@ -4176,19 +4145,7 @@ a.close.disabled {
     border-style: solid;
 }
 
-.popover-header {
-    padding: 0.5rem 0.75rem;
-    margin-bottom: 0;
-    font-size: 1rem;
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #ebebeb;
-    border-top-left-radius: calc(0.3rem - 1px);
-    border-top-right-radius: calc(0.3rem - 1px);
-}
 
-.popover-header:empty {
-    display: none;
-}
 
 .popover-body {
     padding: 0.5rem 0.75rem;
@@ -4949,9 +4906,9 @@ a.text-danger:hover, a.text-danger:focus {
         border: 1px solid #adb5bd;
         page-break-inside: avoid;
     }
-    thead {
-        display: table-header-group;
-    }
+
+  
+     
     tr, img {
         page-break-inside: avoid;
     }
@@ -6250,12 +6207,12 @@ ul li, ol li, dl li {
     /* margin-top: 100px; */
 }
 
-.modal .modal-dialog .modal-content .modal-header h5 {
+.modal .modal-dialog .modal-content h5 {
     /* padding: 25px 26px; */
     font-weight: bold;
 }
 
-.modal .modal-dialog .modal-content .modal-header .close span {
+.modal .modal-dialog .modal-content.close span {
     font-size: 30px;
     font-weight: bold;
     color: #fff;
@@ -6342,7 +6299,7 @@ ul li, ol li, dl li {
     z-index: 1029;
 }
 
-.popover .popover-header {
+.popover {
     font-size: .9375rem;
     border-bottom: 0;
     background: #ffffff;
@@ -6986,52 +6943,6 @@ ul li, ol li, dl li {
     color: #ff4747;
 }
 
-.fc .fc-header-toolbar {
-    margin-top: 2rem;
-}
-
-.fc .fc-header-toolbar .fc-center h2 {
-    font-size: 1rem;
-}
-
-@media (max-width: 767px) {
-    .fc .fc-header-toolbar .fc-left, .fc .fc-header-toolbar .fc-right, .fc .fc-header-toolbar .fc-center {
-        float: none;
-        margin-bottom: 10px;
-    }
-    .fc .fc-header-toolbar .fc-left:after, .fc .fc-header-toolbar .fc-right:after, .fc .fc-header-toolbar .fc-center:after {
-        content: "";
-        clear: both;
-        display: block;
-    }
-    .fc .fc-header-toolbar .fc-right .fc-button-group {
-        float: none;
-    }
-}
-
-.fc .fc-widget-header {
-    border: 0;
-}
-
-.fc .fc-widget-header table tr th {
-    border-width: 0 0 1px 0;
-    text-align: right;
-    padding: 1rem;
-}
-
-@media (max-width: 767px) {
-    .fc .fc-widget-header table tr th {
-        padding: 1rem .25rem;
-    }
-}
-
-.fc .fc-widget-header table tr th span {
-    font-size: 10px;
-    text-transform: uppercase;
-    color: #a8b2b9;
-    letter-spacing: 1px;
-}
-
 .fc .fc-content-skeleton table tr td {
     padding: .5rem;
     font-size: .875rem;
@@ -7100,11 +7011,6 @@ ul li, ol li, dl li {
 
 .jsgrid .jsgrid-button {
     background-image: url(../../images/sprites/jsgrid-icons.png);
-}
-
-.jsgrid .jsgrid-grid-header {
-    border: 1px solid #c9ccd7;
-    border-top: 0;
 }
 
 .jsgrid .jsgrid-table th {
@@ -7659,16 +7565,6 @@ ul li, ol li, dl li {
     -moz-box-shadow: 0 19px 34px -15px #d2d2f2;
 }
 
-@media (max-width: 991.98px) {
-    .horizontal-menu .bottom-navbar {
-        display: none;
-    }
-    .horizontal-menu .bottom-navbar.header-toggled {
-        display: block;
-        max-height: calc(100vh - 70px);
-        overflow: auto;
-    }
-}
 
 .horizontal-menu .bottom-navbar .page-navigation {
     position: relative;
