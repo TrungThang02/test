@@ -2325,7 +2325,8 @@ pre code {
     } */
 }
 
-@media (min-width: 768px) {
+@media 
+{
     .container {
         max-width: 90%;
     }
@@ -2396,10 +2397,7 @@ pre code {
         flex: 0 0 41.66667%;
         max-width: 41.66667%;
     }
-    .col-md-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
+
     .col-md-7 {
         flex: 0 0 58.33333%;
         max-width: 58.33333%;
